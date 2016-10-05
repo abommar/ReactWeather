@@ -1,20 +1,18 @@
 var React = require('react');
+var {Link} = require('react-router');
 
-// var About = React.createClass({
-//   render: function () {
-//
-//     return (
-//         <h2>About Component</h2>
-//     );
-//   }
-// });
+var About = (props) => {
+    return (
+        <div>
+            <h1 className="text-center">About</h1>
+            <p>
+                Welcome to the About Page
+            </p>
+            <p>
+                <Link to='https://github.com/abommar/ReactWeather'>On GitHub</Link>
+            </p>
 
-var About = (props)  => {
-  return (
-    <div>
-      <h3>About</h3>
-      <p>Welcome to the About Page</p>
-    </div>
-  )
+        </div>
+    )
 };
 module.exports = About;
